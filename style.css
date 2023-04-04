@@ -1,0 +1,212 @@
+:root {
+  --backgroundGradient: linear-gradient(
+    90deg,
+    rgba(254, 74, 47, 1) 0%,
+    rgba(255, 67, 95, 1) 72%,
+    rgba(255, 64, 108, 1) 100%
+  );
+  --btnColor: #ff4a2e;
+  --titleSize: 4rem;
+  --pSize: 1.2rem;
+  --backGroundColor: #f9f4fc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12.5vh;
+  background-color: var(--backGroundColor);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 1000px));
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 18px 26px 5px rgba(0, 0, 0, 0.3);
+}
+
+.login,
+.signUp {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  position: relative;
+}
+.login .loginSec,
+.signUp .signUpSec {
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.login {
+  transform: translateX(100%);
+}
+main .title {
+  width: 100%;
+  font-size: var(--titleSize);
+  font-weight: 500;
+  position: absolute;
+  top: 12%;
+  text-align: center;
+  margin: auto;
+}
+
+main p {
+  font-size: var(--pSize);
+  font-weight: 300;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+}
+main .first {
+  top: 40.6%;
+}
+main .second {
+  top: 67.5%;
+}
+main .links {
+  width: max-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 26.5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.links a {
+  font-size: 1.5rem;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 20px;
+  box-shadow: 0 0 32px -22.5px #000000;
+  transition: all 0.3s;
+}
+.links a:hover {
+  background-color: #ff4a2e;
+  color: white;
+}
+main .formContainer {
+  display: flex;
+  position: absolute;
+  top: 43.9%;
+  margin: auto;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.formContainer form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formContainer form label {
+  width: 100%;
+}
+.formContainer form input {
+  width: 75%;
+  background-color: rgb(229, 227, 227);
+  padding: 15px;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+}
+input:focus {
+  outline: none;
+}
+main button {
+  position: absolute;
+  top: 75%;
+  width: 190px;
+  height: 60px;
+  font-size: 1rem;
+  border-radius: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border: none;
+  background-color: var(--btnColor);
+  cursor: pointer;
+}
+.textContainer {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background: var(--backgroundGradient);
+  transition: all 1s ease;
+  border-radius: 10px 0 0 10px;
+}
+.textContainer .welcomeBack,
+.textContainer .helloFriend {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 300px;
+  color: white;
+  transition: all 1s ease;
+  border-radius: 10px;
+}
+
+.welcomeBack h2,
+.helloFriend h2 {
+  position: absolute;
+  top: 30%;
+  font-size: var(--titleSize);
+}
+
+.welcomeBack p,
+.helloFriend p {
+  top: 45%;
+  font-size: 1.5rem;
+}
+
+.welcomeBack button,
+.helloFriend button {
+  top: 60%;
+  background-color: transparent;
+  outline: 2px solid white;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;500;600&display=swap"
+      rel="stylesheet" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="mainContainer">
+      <section class="login" id="login">
+        <div class="loginSec hidden" id="loginSec">
+          <h2 class="title">Sign in</h2>
+          <div class="links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <p class="first">or use your account</p>
+          <div class="formContainer">
+            <form action="#" class="signIn" method="post">
+              <label for="emailLogin" class="emailLabel"> </label>
+              <input
+                type="email"
+                id="emailLogin"
+                placeholder="Email"
+                required />
+            </form>
+            <form action="#" class="signIn" method="post">
+              <label for="passwordLogin" class="passwordLabel"> </label>
+              <input
+                type="password"
+                id="passwordLogin"
+                placeholder="Password"
+                required />
+            </form>
+          </div>
+          <p class="second"><a href="#">Forgot your password?</a></p>
+          <button class="signInBtn" id="signInBtn">SIGN IN</button>
+        </div>
+      </section>
+      <section class="signUp" id="signUp">
+        <div class="signUpSec" id="signUpSec">
+          <h2 class="title">Create Account</h2>
+          <div class="links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <p class="first">or use your email for registration</p>
+          <div class="formContainer">
+            <form action="#" class="signUpform" method="post">
+              <label for="name" class="nameLabel"> </label>
+              <input type="text" id="name" placeholder="Name" required />
+            </form>
+            <form action="#" class="signUpform" method="post">
+              <label for="email" class="emailLabel"> </label>
+              <input type="email" id="email" placeholder="Email" required />
+            </form>
+            <form action="#" class="signUpform" method="post">
+              <label for="password" class="passwordLabel"> </label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required />
+            </form>
+          </div>
+          <button class="signUpBtn" id="signUpBtn">SIGN UP</button>
+        </div>
+      </section>
+      <section class="textContainer" id="textContainer">
+        <div class="welcomeBack" id="welcomeBack">
+          <h2 class="welcomeBackElem">Welcome Back!</h2>
+          <p class="welcomeBackElem">
+            To keep connceted with us please login<br />
+            with your personal info
+          </p>
+          <button class="welcomeMsgBtn welcomeBackElem" id="welcomeMsgBt">
+            SIGN IN
+          </button>
+        </div>
+        <div class="helloFriend hidden" id="helloFriend">
+          <h2 class="helloFriendElem">Hello, Friend!</h2>
+          <p class="helloFriendElem">
+            Enter your personal details and start<br />
+            a journey with us
+          </p>
+          <button class="helloFriendBtn helloFriendElem" id="helloFriendBtn">
+            SIGN UP
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
